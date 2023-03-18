@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ardientes Recipe</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="stylerecipehere.css">
+
+    </head>
+    <body style="background-color: plum;">
+    
+    <header>
+        <div class="hero">
+            <h1 class="recipes">Here are five (5) recipes:</h1>
+
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#BIKO">Biko</a></li>
+                <li><a href="#TNOLANG MANOK">Tinolang Manok</a></li>
+                <li><a href="#PAKSIW NA BANGUS">Paksiw na Bangus</a></li>
+                <li><a href="#MAJA BLANCA">Maja Blanca</a></li>
+                <li><a href="#PUTO CALASIAO">Puto Calasiao</a></li>     
+
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="https://panlasangpinoy.com/filipino-asian-food-dessert-rice-cake-biko-recipe/" >Biko</a></li>
+
+                
+                <li><a href="#TINOLANG MANOK">Tinolang Manok</a></li>
+
+
+                <li><a href="#PAKSIW NA BANGUS">Paksiw na Bangus</a></li>
+                <li><a href="#MAJA BLANCA">Maja Blanca</a></li>
+                <li><a href="#PUTO CALASIAO">Puto Calasiao</a></li>
+                <li><a href="#" class="action_btn">Get Started</a></li>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggle_btnIcon = document.querySelector('.toggle_btn i')
+        const dropdownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onlick = function(){
+            dropdownMenu.classList.toggle('open')
+            const isOpen = dropdownMenu.classList.contains('open')
+
+            toggle_btnIcon.classList = isOpen
+
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <div id></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
